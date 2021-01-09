@@ -1,4 +1,4 @@
-# C&#35; Live Project
+# C# Live Project 
 
 ## Introduction
 
@@ -334,4 +334,4 @@ For this Story, my task was to fix and standardize the buttons on the Award Dele
 
 For this Story, my task was to create a DonationGoal property and give Administration the ability to view and edit their donation goal. In the Company dropdown in the navbar, I added a "Donate!" link to the Donation\Create page. Then I created the new property in the AdminSettings.cs file under AdminSettings, and made a new field in the Admin Dashboard so the Admin can change the value.
 
-*Jump to: [Page Top](#C&#35;-live-project), [Front End Stories](#front-end-stories)*
+*Jump to: [Page Top](#introduction), [Front End Stories](#front-end-stories)*
