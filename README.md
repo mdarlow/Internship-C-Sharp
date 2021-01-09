@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The C# Live Project at the Tech Academy is a two week sprint through the TheatreCMS project. The purpose of this project is to work as a team to update a theater/acting company website for users who are not technically saavy and want to easily manage what displays in their website. Since the project started months before I was brought in and therefore many features were already built, during those two weeks I had the opportunity to work on several [front end stories](#front-end-stories).
+The C# Live Project at the Tech Academy is a two-week sprint through the TheatreCMS project. The purpose of this project is to work as a team to update a theater/acting company website for users who are not technically saavy and want to easily manage what displays in their website. Since the project started months before I was brought in and therefore many features were already built, during those two weeks I had the opportunity to work on several [front end stories](#front-end-stories).
 
 ## Front End Stories
 
@@ -13,7 +13,7 @@ The C# Live Project at the Tech Academy is a two week sprint through the Theatre
 
 ### Cast Member Delete Page Layout
 
-The view file initially provided me with default html string lines and a default delete button. My task was to change the layout by meticulously positioning elements to match a provided image, including creating and displaying a blue "CurrentMember" pill button if the Cast Member is a current one, enhance the default delete button to match the standard, and create a back to list button. For smaller screen sizes, all information was to be moved below the image.
+The view file initially provided me with default html string lines and a default delete button. My task was to change the layout by meticulously positioning elements to match a provided image, including creating and displaying a blue "CurrentMember" pill button if the Cast Member is a current one, enhancing the default delete button to match the standard, and creating a back to list button. For smaller screen sizes, all information was to be moved below the image.
 
     @using TheatreCMS.Controllers
     @model TheatreCMS.Models.CastMember
@@ -206,7 +206,7 @@ The following is the related CSS code I created:
 
 ### New Message Bar
 
-For this Story, my task was to create a messaging area on layout. I was provided an image to replicate which as to be fixed to the bottom-left of the screen. The green dot and the value were to be hardcoded at the time. Here I created a partial view:
+For this Story, my task was to create a messaging area on layout. I was provided an image to replicate which was to be fixed to the bottom-left of the screen. The green dot and the value were to be hardcoded at the time. Here I created a partial view:
 
     <!-- 
         01/01/21
