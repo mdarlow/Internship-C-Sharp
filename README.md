@@ -567,8 +567,8 @@ And the CSS:
 
 ## Back End Stories
 
-* [Change Photo Rotation On Click](change-photo-rotation-on-click)
-* [Connect Seeded Member to Cast Member](change-seeded-member-to-cast-member)
+* [Change Photo Rotation On Click](#change-photo-rotation-on-click)
+* [Connect Seeded Member to Cast Member](#change-seeded-member-to-cast-member)
 
 ### Change Photo Rotation On Click
 
