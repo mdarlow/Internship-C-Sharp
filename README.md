@@ -10,6 +10,7 @@ The C# Live Project at the Tech Academy is a series of two-week sprints through 
 * [New Message Bar](#new-message-bar)
 * [Donation Page and Donation Goal](#donation-page-and-donation-goal)
 * [Award Delete Page Buttons](#award-delete-page-buttons)
+* [Upgrade Award Index Page](#upgrade-award-index-page)
 
 ### Cast Member Delete Page Layout
 
@@ -334,12 +335,6 @@ For this Story, my task was to fix and standardize the buttons on the Award Dele
 
 For this Story, my task was to create a DonationGoal property and give Administration the ability to view and edit their donation goal. In the Company dropdown in the navbar, I added a "Donate!" link to the Donation\Create page. Then I created the new property in the AdminSettings.cs file under AdminSettings, and made a new field in the Admin Dashboard so the Admin can change the value.
 
-## Back End Stories
-
-* [Upgrade Award Index Page](#upgrade-award-index-page)
-* [Change Photo Rotation On Click](change-photo-rotation-on-click)
-* [Connect Seeded Member to Cast Member](change-seeded-member-to-cast-member)
-
 ### Upgrade Award Index Page
 
 For this Story, my task was to create code that italicizes a recipient's name and places an information icon next to it if the recipient has an associated Cast Member. Selecting the icon displays a modal containing information on that Cast Member, selecting anywhere outside of the modal closes it, and selecting the photo takes the user to that Cast Member's details page. 
@@ -569,6 +564,11 @@ And the CSS:
 
      /* END Award Details Index Page | part 2 */
     /*****************************************/
+
+## Back End Stories
+
+* [Change Photo Rotation On Click](change-photo-rotation-on-click)
+* [Connect Seeded Member to Cast Member](change-seeded-member-to-cast-member)
 
 ### Change Photo Rotation On Click
 
