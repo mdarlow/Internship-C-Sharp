@@ -11,14 +11,6 @@ The C# Live Project at the Tech Academy is a series of two-week sprints through 
 * [Donation Page and Donation Goal](#donation-page-and-donation-goal)
 * [Award Delete Page Buttons](#award-delete-page-buttons)
 
-## Back End Stories
-
-* [Upgrade Award Index Page](#upgrade-award-index-page)
-* [Change Photo Rotation On Click](change-photo-rotation-on-click)
-* [Connect Seeded Member to Cast Member](change-seeded-member-to-cast-member)
-
-## Front End Stories
-
 ### Cast Member Delete Page Layout
 
 The view file initially provided me with default html string lines and a default delete button. My task was to change the layout by meticulously positioning elements to match a provided image, including creating and displaying a blue "CurrentMember" pill button if the Cast Member is a current one, enhancing the default delete button to match the standard, and creating a back to list button. For smaller screen sizes, all information was to be moved below the image.
@@ -343,6 +335,10 @@ For this Story, my task was to fix and standardize the buttons on the Award Dele
 For this Story, my task was to create a DonationGoal property and give Administration the ability to view and edit their donation goal. In the Company dropdown in the navbar, I added a "Donate!" link to the Donation\Create page. Then I created the new property in the AdminSettings.cs file under AdminSettings, and made a new field in the Admin Dashboard so the Admin can change the value.
 
 ## Back End Stories
+
+* [Upgrade Award Index Page](#upgrade-award-index-page)
+* [Change Photo Rotation On Click](change-photo-rotation-on-click)
+* [Connect Seeded Member to Cast Member](change-seeded-member-to-cast-member)
 
 ### Upgrade Award Index Page
 
