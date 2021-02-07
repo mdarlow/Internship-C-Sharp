@@ -16,6 +16,24 @@ The C# Live Project at the Tech Academy is a series of two-week sprints through 
 
 The view file initially provided me with default html string lines and a default delete button. My task was to change the layout by meticulously positioning elements to match a provided image, including creating and displaying a blue "CurrentMember" pill button if the Cast Member is a current one, enhancing the default delete button to match the standard, and creating a back to list button. For smaller screen sizes, all information was to be moved below the image.
 
+#### Here are two screenshots before I started working on the page:
+
+##### 1/2:
+![CMDPL Before 1/2](https://github.com/mdarlow/JobPlacementDashboard/blob/main/CMDPL/CMDPL_before1.png)
+
+##### 2/2:
+![CMDPL Before 2/2](https://github.com/mdarlow/JobPlacementDashboard/blob/main/CMDPL/CMDPL_before2.png)
+
+#### Here are two screenshots after I finished:
+
+##### 1/2:
+![CMDPL After 1/2](https://github.com/mdarlow/JobPlacementDashboard/blob/main/CMDPL/CMDPL_after1.png)
+
+##### 2/2:
+![CMDPL After 2/2](https://github.com/mdarlow/JobPlacementDashboard/blob/main/CMDPL/CMDPL_after2.png)
+
+#### Here is my code:
+
     @using TheatreCMS.Controllers
     @model TheatreCMS.Models.CastMember
     @using TheatreCMS.Models
@@ -148,7 +166,7 @@ The view file initially provided me with default html string lines and a default
         </div>
     </div>
 
-The following is the related CSS code I created:
+#### The following is the related CSS code I created:
 
     /***************************/
     /* Cast Member Delete Page */
@@ -207,8 +225,15 @@ The following is the related CSS code I created:
 
 ### New Message Bar
 
-For this Story, my task was to create a messaging area on layout. I was provided an image to replicate which was to be fixed to the bottom-left of the screen. The green dot and the value were to be hardcoded at the time. Here I created a partial view:
+For this Story, my task was to create a messaging area on layout. I was provided an image to replicate which was to be fixed to the bottom-left of the screen. The green dot and the value were to be hardcoded at the time. 
 
+
+#### New Message bar screenshot:
+
+![NMB After](https://github.com/mdarlow/JobPlacementDashboard/blob/main/NMB/NMB_after.png)
+
+
+#### Here is my code for the partial view:
     <!-- 
         01/01/21
         Partial view for New Message Bar.
@@ -227,7 +252,7 @@ For this Story, my task was to create a messaging area on layout. I was provided
         <i class="newMsgUpIcon fas fa-angle-up"></i>
     </div>
 
-Added code to the controller:
+#### My added code to the controller:
 
     using System.Web.Mvc;
 
@@ -251,14 +276,14 @@ Added code to the controller:
         }
     }
 
-Added code to the layout:
+#### My added code to the layout:
 
     <!-------------------- NEW MESSAGE BAR -------------------->
     <!---------- See ~Views/Shared/_Messaging.cshtml ---------->
     @{Html.RenderPartial("_Messaging");}
     <!--------------------------------------------------------->
 
-And the CSS:
+#### And the CSS:
 
     /* ------------------- NEW MESSAGE BAR ------------------- */
     /*
@@ -323,6 +348,14 @@ And the CSS:
 
 For this Story, my task was to fix and standardize the buttons on the Award Delete page.
 
+#### Before screenshot:
+
+![ADPB Before](https://github.com/mdarlow/JobPlacementDashboard/blob/main/ADPB/ADPB_before.png)
+
+#### After screenshot:
+
+![ADPB After](https://github.com/mdarlow/JobPlacementDashboard/blob/main/ADPB/ADPB_after.png)
+
     @using (Html.BeginForm("Delete", "Awards", FormMethod.Post, new { id = "DeleteForm" })) {
         @Html.AntiForgeryToken()
         <div class="form-actions no-color">
@@ -338,6 +371,14 @@ For this Story, my task was to create a DonationGoal property and give Administr
 ### Upgrade Award Index Page
 
 For this Story, my task was to create code that italicizes a recipient's name and places an information icon next to it if the recipient has an associated Cast Member. Selecting the icon displays a modal containing information on that Cast Member, selecting anywhere outside of the modal closes it, and selecting the photo takes the user to that Cast Member's details page. 
+
+#### Screenshot before clicking on the icon:
+
+![UAIP Before Click](https://github.com/mdarlow/JobPlacementDashboard/blob/main/UAIP/UAIP_icon.png)
+
+#### Screenshot of modal after selecting the icon:
+
+![UAIP On Click Modal](https://github.com/mdarlow/JobPlacementDashboard/blob/main/UAIP/UAIP_modal.png)
 
 Here I created the Views\Awards\Index.cshtml page:
 
