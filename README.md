@@ -7,10 +7,10 @@ The C# Live Project at the Tech Academy is a series of two-week sprints through 
 ## Front End Stories
 
 * [Cast Member Delete Page Layout](#cast-member-delete-page-layout)
-* [New Message Bar](#new-message-bar)
-* [Donation Page and Donation Goal](#donation-page-and-donation-goal)
-* [Award Delete Page Buttons](#award-delete-page-buttons)
 * [Upgrade Award Index Page](#upgrade-award-index-page)
+* [New Message Bar](#new-message-bar)
+* [Award Delete Page Buttons](#award-delete-page-buttons)
+* [Donation Page and Donation Goal](#donation-page-and-donation-goal)
 
 ### Cast Member Delete Page Layout
 
@@ -222,151 +222,6 @@ The view file initially provided me with default html string lines and a default
 
     /* END Cast Member Delete Page */
     /*******************************/
-
-### New Message Bar
-
-For this Story, my task was to create a messaging area on layout. I was provided an image to replicate which was to be fixed to the bottom-left of the screen. The green dot and the value were to be hardcoded at the time. 
-
-
-#### New Message bar screenshot:
-
-![NMB After](https://github.com/mdarlow/JobPlacementDashboard/blob/main/NMB/NMB_after.png)
-
-
-#### Here is my code for the partial view:
-    <!-- 
-        01/01/21
-        Partial view for New Message Bar.
-
-        Directly related files:
-        ~Controllers/MessageController.cs
-        ~Views/Shared/_Layout.cshtml   --(Search "NEW MESSAGE BAR")
-        ~Content/Site.css   --(Search "NEW MESSAGE BAR")
-    -->
-
-    <div class="newMsgBar">
-        <i class="newMsgCommentDotsIcon fas fa-comment-dots"></i>
-        <i class="newMsgIndicator fas fa-circle fa-stack"></i>
-        <span class="newMsgQuantity">&nbsp;4 </span>
-        <span class="newMsgTitle">&nbsp;New Messages</span>
-        <i class="newMsgUpIcon fas fa-angle-up"></i>
-    </div>
-
-#### My added code to the controller:
-
-    using System.Web.Mvc;
-
-    // See ~Views/Shared/_Messaging.cshtml
-
-    namespace TheatreCMS.Controllers
-    {
-        public class MessageController : Controller
-        {
-            // GET: Message
-            public ActionResult Index()
-            {
-                return View();
-            }
-
-            [ChildActionOnly]
-            public PartialViewResult GetAddress()
-            {
-                return PartialView("_address");
-            }
-        }
-    }
-
-#### My added code to the layout:
-
-    <!-------------------- NEW MESSAGE BAR -------------------->
-    <!---------- See ~Views/Shared/_Messaging.cshtml ---------->
-    @{Html.RenderPartial("_Messaging");}
-    <!--------------------------------------------------------->
-
-#### And the CSS:
-
-    /* ------------------- NEW MESSAGE BAR ------------------- */
-    /*
-        See ~Views/Shared/_Messaging.cshtml
-    */
-
-    .newMsgBar {
-        overflow: hidden;
-        cursor: pointer;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 325px;
-        background-color: #1a1a1a;
-        z-index: 2; /* Must be at least 2, otherwise the Slideshow 
-                    on the Home page will be selected instead 
-                    when clicked on. */
-    }
-
-    /* Icon Styling */
-    .newMsgCommentDotsIcon {
-        background-color: #121212;
-        color: white;
-        padding: 6px 8px 6px 8px;
-        font-size: 21px;
-    }
-    .newMsgIndicator {
-        position: absolute;
-        top: -11px;
-        left: -18px;
-        color: forestgreen;
-        font-size: 13px;
-    }
-    .newMsgUpIcon {
-        position: relative;
-        right: -32px;
-        background-color: #121212;
-        color: white;
-        padding: 6px 11px 6px 11px;
-        font-size: 21px;
-    }
-
-    /* Character Styling */
-    .newMsgQuantity {
-        color: forestgreen;
-        font-weight: bold;
-        position: relative;
-        left: -35px;
-        font-size: 21px;
-    }
-    .newMsgTitle {
-        color: white;
-        font-weight: bold;
-        position: relative;
-        left: -35px;
-        font-size: 21px;
-    }
-
-    /* ----------------- END NEW MESSAGE BAR ----------------- */
-
-### Award Delete Page Buttons
-
-For this Story, my task was to fix and standardize the buttons on the Award Delete page.
-
-#### Before screenshot:
-
-![ADPB Before](https://github.com/mdarlow/JobPlacementDashboard/blob/main/ADPB/ADPB_before.png)
-
-#### After screenshot:
-
-![ADPB After](https://github.com/mdarlow/JobPlacementDashboard/blob/main/ADPB/ADPB_after.png)
-
-    @using (Html.BeginForm("Delete", "Awards", FormMethod.Post, new { id = "DeleteForm" })) {
-        @Html.AntiForgeryToken()
-        <div class="form-actions no-color">
-            <a class="btn btn-main" onclick="document.getElementById('DeleteForm').submit()"><i class="fa fa-trash-alt fa-fw"></i>Delete</a>
-            <a class="btn btn-main" href="/Awards"><i class="fa fa-hand-point-left fa-fw"></i>Back To List</a> 
-        <div>
-    }
-
-### Donation Page and Donation Goal
-
-For this Story, my task was to create a DonationGoal property and give Administration the ability to view and edit their donation goal. In the Company dropdown in the navbar, I added a "Donate!" link to the Donation\Create page. Then I created the new property in the AdminSettings.cs file under AdminSettings, and made a new field in the Admin Dashboard so the Admin can change the value.
 
 ### Upgrade Award Index Page
 
@@ -605,6 +460,149 @@ And the CSS:
 
      /* END Award Details Index Page | part 2 */
     /*****************************************/
+
+### New Message Bar
+
+For this Story, my task was to create a messaging area on layout. I was provided an image to replicate which was to be fixed to the bottom-left of the screen. The green dot and the value were to be hardcoded at the time. 
+
+#### New Message bar screenshot:
+
+![NMB After](https://github.com/mdarlow/JobPlacementDashboard/blob/main/NMB/NMB_after.png)
+
+#### Here is my code for the partial view:
+    <!-- 
+        01/01/21
+        Partial view for New Message Bar.
+
+        Directly related files:
+        ~Controllers/MessageController.cs
+        ~Views/Shared/_Layout.cshtml   --(Search "NEW MESSAGE BAR")
+        ~Content/Site.css   --(Search "NEW MESSAGE BAR")
+    -->
+
+    <div class="newMsgBar">
+        <i class="newMsgCommentDotsIcon fas fa-comment-dots"></i>
+        <i class="newMsgIndicator fas fa-circle fa-stack"></i>
+        <span class="newMsgQuantity">&nbsp;4 </span>
+        <span class="newMsgTitle">&nbsp;New Messages</span>
+        <i class="newMsgUpIcon fas fa-angle-up"></i>
+    </div>
+
+#### My added code to the controller:
+
+    using System.Web.Mvc;
+
+    // See ~Views/Shared/_Messaging.cshtml
+
+    namespace TheatreCMS.Controllers
+    {
+        public class MessageController : Controller
+        {
+            // GET: Message
+            public ActionResult Index()
+            {
+                return View();
+            }
+
+            [ChildActionOnly]
+            public PartialViewResult GetAddress()
+            {
+                return PartialView("_address");
+            }
+        }
+    }
+
+#### My added code to the layout:
+
+    <!-------------------- NEW MESSAGE BAR -------------------->
+    <!---------- See ~Views/Shared/_Messaging.cshtml ---------->
+    @{Html.RenderPartial("_Messaging");}
+    <!--------------------------------------------------------->
+
+#### And the CSS:
+
+    /* ------------------- NEW MESSAGE BAR ------------------- */
+    /*
+        See ~Views/Shared/_Messaging.cshtml
+    */
+
+    .newMsgBar {
+        overflow: hidden;
+        cursor: pointer;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 325px;
+        background-color: #1a1a1a;
+        z-index: 2; /* Must be at least 2, otherwise the Slideshow 
+                    on the Home page will be selected instead 
+                    when clicked on. */
+    }
+
+    /* Icon Styling */
+    .newMsgCommentDotsIcon {
+        background-color: #121212;
+        color: white;
+        padding: 6px 8px 6px 8px;
+        font-size: 21px;
+    }
+    .newMsgIndicator {
+        position: absolute;
+        top: -11px;
+        left: -18px;
+        color: forestgreen;
+        font-size: 13px;
+    }
+    .newMsgUpIcon {
+        position: relative;
+        right: -32px;
+        background-color: #121212;
+        color: white;
+        padding: 6px 11px 6px 11px;
+        font-size: 21px;
+    }
+
+    /* Character Styling */
+    .newMsgQuantity {
+        color: forestgreen;
+        font-weight: bold;
+        position: relative;
+        left: -35px;
+        font-size: 21px;
+    }
+    .newMsgTitle {
+        color: white;
+        font-weight: bold;
+        position: relative;
+        left: -35px;
+        font-size: 21px;
+    }
+
+    /* ----------------- END NEW MESSAGE BAR ----------------- */
+
+### Award Delete Page Buttons
+
+For this Story, my task was to fix and standardize the buttons on the Award Delete page.
+
+#### Before screenshot:
+
+![ADPB Before](https://github.com/mdarlow/JobPlacementDashboard/blob/main/ADPB/ADPB_before.png)
+
+#### After screenshot:
+
+![ADPB After](https://github.com/mdarlow/JobPlacementDashboard/blob/main/ADPB/ADPB_after.png)
+
+    @using (Html.BeginForm("Delete", "Awards", FormMethod.Post, new { id = "DeleteForm" })) {
+        @Html.AntiForgeryToken()
+        <div class="form-actions no-color">
+            <a class="btn btn-main" onclick="document.getElementById('DeleteForm').submit()"><i class="fa fa-trash-alt fa-fw"></i>Delete</a>
+            <a class="btn btn-main" href="/Awards"><i class="fa fa-hand-point-left fa-fw"></i>Back To List</a> 
+        <div>
+    }
+
+### Donation Page and Donation Goal
+
+For this Story, my task was to create a DonationGoal property and give Administration the ability to view and edit their donation goal. In the Company dropdown in the navbar, I added a "Donate!" link to the Donation\Create page. Then I created the new property in the AdminSettings.cs file under AdminSettings, and made a new field in the Admin Dashboard so the Admin can change the value.
 
 ## Back End Stories
 
