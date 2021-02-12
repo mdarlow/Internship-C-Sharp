@@ -225,7 +225,7 @@ The view file initially provided me with default html string lines and a default
 
 ### Upgrade Award Index Page
 
-For this Story, my task was to create code that italicizes a recipient's name and places an information icon next to it if the recipient has an associated Cast Member. Selecting the icon displays a modal containing information on that Cast Member, selecting anywhere outside of the modal closes it, and selecting the photo takes the user to that Cast Member's details page. 
+My task was to create code that italicizes a recipient's name and places an information icon next to it if the recipient has an associated Cast Member. Selecting the icon displays a modal containing information on that Cast Member, selecting anywhere outside of the modal closes it, and selecting the photo takes the user to that Cast Member's details page. 
 
 #### Screenshot before clicking on the icon:
 
@@ -463,7 +463,7 @@ And the CSS:
 
 ### New Message Bar
 
-For this Story, my task was to create a messaging area on layout. I was provided an image to replicate which was to be fixed to the bottom-left of the screen. The green dot and the value were to be hardcoded at the time. 
+My task was to create a messaging area on layout. I was provided an image to replicate which was to be fixed to the bottom-left of the screen. The green dot and the value were to be hardcoded at the time. 
 
 #### New Message bar screenshot:
 
@@ -582,7 +582,7 @@ For this Story, my task was to create a messaging area on layout. I was provided
 
 ### Award Delete Page Buttons
 
-For this Story, my task was to fix and standardize the buttons on the Award Delete page.
+My task was to fix and standardize the buttons on the Award Delete page.
 
 #### Before screenshot:
 
@@ -602,7 +602,7 @@ For this Story, my task was to fix and standardize the buttons on the Award Dele
 
 ### Donation Page and Donation Goal
 
-For this Story, my task was to create a DonationGoal property and give Administration the ability to view and edit their donation goal. In the Company dropdown in the navbar, I added a "Donate!" link to the Donation\Create page. Then I created the new property in the AdminSettings.cs file under AdminSettings, and made a new field in the Admin Dashboard so the Admin can change the value.
+My task was to create a DonationGoal property and give Administration the ability to view and edit their donation goal. In the Company dropdown in the navbar, I added a "Donate!" link to the Donation\Create page. Then I created the new property in the AdminSettings.cs file under AdminSettings, and made a new field in the Admin Dashboard so the Admin can change the value.
 
 ## Back End Stories
 
@@ -611,7 +611,7 @@ For this Story, my task was to create a DonationGoal property and give Administr
 
 ### Change Photo Rotation On Click
 
-For this Story, my task was to create a pill badge under each production photo that is only viewable by administration. Selecting this badge will switch the button's text between "Do Not Rotate Images" and "Rotate Images," the button's color between gray and green, and the RotateProductionPhotos property between false and true, respectively, without the need to reload the webpage. 
+My task was to create a pill badge under each production photo that is only viewable by administration. Selecting this badge will switch the button's text between "Do Not Rotate Images" and "Rotate Images," the button's color between gray and green, and the RotateProductionPhotos property between false and true, respectively, without the need to reload the webpage. 
 
 Here I made my addition to the ProductionsController.cs file:
 
@@ -683,7 +683,7 @@ And made my additions to the Productions\Index.cshtml page:
 
 ### Connect Seeded Member to Cast Member
 
-For this Story, my task was to dynamically assign a specific Cast Member to a specific Seeded User in the Startup.cs file, ensuring that even if the CastMemberId changes due to, for example, additional Cast Members being seeded before her that she will be connected to the User. 
+My task was to dynamically assign a specific Cast Member to a specific Seeded User in the Startup.cs file, ensuring that even if the CastMemberId changes due to, for example, additional Cast Members being seeded before her that she will be connected to the User. 
 
 Here I made my addition to the Startapp.cs file:
 
