@@ -1,8 +1,8 @@
-# C# Live Project 
+# Prosper IT Consulting Internship
 
 ## Introduction
 
-The C# Live Project at the Tech Academy is a series of two-week sprints through the TheatreCMS project. The purpose of this project is to work as a team to update a theater/acting company website for users who are not technically saavy and want to easily manage what displays in their website. Since the project started months before I was brought in and therefore many features were already built, during the Live Project I had the opportunity to work on several [front end stories](#front-end-stories) and [back end stories](#back-end-stories).
+During my time at Prosper IT Consulting, I worked on a theater/acting company website using MVC and Entity Framework Code First with C# for three Sprints (six weeks). The purpose of this internship was to work as a team to update the company's website for users who are not technically saavy and want to easily manage what displays in their website. Since the project started months before I was brought in and therefore many features were already built, during my internship I had the opportunity to work on several [front end stories](#front-end-stories) and [back end stories](#back-end-stories).
 
 ## Front End Stories
 
@@ -711,4 +711,4 @@ Here I made my addition to the Startapp.cs file:
         context.SaveChanges();
     }
 
-*Jump to: [Page Top](#introduction), [Front End Stories](#front-end-stories), [Back End Stories](#back-end-stories)*
+*Jump to: [Page Top](#prosper-it-consulting-internship), [Front End Stories](#front-end-stories), [Back End Stories](#back-end-stories)*
