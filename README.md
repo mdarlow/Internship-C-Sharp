@@ -2,9 +2,9 @@
 
 ## Introduction
 
-During my time at Prosper IT Consulting, I worked on a theater/acting company website using MVC and Entity Framework Code First with C# for three Sprints (six weeks). The purpose of this internship was to work as a team to update the company's website for users who are not technically saavy and want to easily manage what displays in their website. Since the project started months before I was brought in and therefore many features were already built, during my internship I had the opportunity to work on several [front end stories](#front-end-stories) and [back end stories](#back-end-stories).
+During my time at Prosper IT Consulting, I worked on a theater/acting company website using MVC and Entity Framework Code First with C# for three Sprints (six weeks). The purpose of this internship was to work as a team to update the company's website for users who are not technically saavy and want to easily manage what displays in their website. Since the project started months before I was brought in and therefore many features were already built, during my internship I had the opportunity to work on several [front end tasks](#front-end-tasks) and [back end tasks](#back-end-tasks).
 
-## Front End Stories
+## Front End Tasks
 
 * [Cast Member Delete Page Layout](#cast-member-delete-page-layout)
 * [Upgrade Award Index Page](#upgrade-award-index-page)
@@ -604,7 +604,7 @@ My task was to fix and standardize the buttons on the Award Delete page.
 
 My task was to create a DonationGoal property and give Administration the ability to view and edit their donation goal. In the Company dropdown in the navbar, I added a "Donate!" link to the Donation\Create page. Then I created the new property in the AdminSettings.cs file under AdminSettings, and made a new field in the Admin Dashboard so the Admin can change the value.
 
-## Back End Stories
+## Back End Tasks
 
 * [Change Photo Rotation On Click](#change-photo-rotation-on-click)
 * [Connect Seeded Member to Cast Member](#connect-seeded-member-to-cast-member)
@@ -711,4 +711,4 @@ Here I made my addition to the Startapp.cs file:
         context.SaveChanges();
     }
 
-*Jump to: [Page Top](#prosper-it-consulting-internship), [Front End Stories](#front-end-stories), [Back End Stories](#back-end-stories)*
+*Jump to: [Page Top](#prosper-it-consulting-internship), [Front End Tasks](#front-end-tasks), [Back End Tasks](#back-end-tasks)*
